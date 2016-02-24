@@ -1,5 +1,5 @@
-from calcdeg import *
-from readfinal import *
+from CalculateDegrees import *
+from read import *
 
 pointerlocx  = raw_input("Please input pointer\'s x location: ")
 pointerlocy  = raw_input("Please input pointer\'s y location: ")
