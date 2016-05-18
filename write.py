@@ -33,3 +33,12 @@ def writeinput(message1,message2,message3,message4):
             pass
 
         time.sleep(1)
+def finduid():
+    while True:
+        try:
+            uid = mifare.select()
+            if uid:
+                return uid
+                break
+        except nxppy.SelectError:
+            pass
