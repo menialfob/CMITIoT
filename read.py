@@ -51,3 +51,14 @@ def writeoutput():
 
         time.sleep(1)
     return slice1, slice2, slice3, slice4
+
+def finduid():
+    while True:
+        try:
+            uid = mifare.select()
+            break
+        except nxppy.SelectError:
+            pass
+
+        time.sleep(1)
+    return uid

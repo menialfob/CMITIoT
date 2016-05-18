@@ -3,7 +3,8 @@ from read import *
 
 pointerlocx  = raw_input("Please input pointer\'s x location: ")
 pointerlocy  = raw_input("Please input pointer\'s y location: ")
-steps = int(CalcDeg(int(pointerlocx),int(pointerlocy),int(writeoutput()[0][2]),int(writeoutput()[0][3])))/0.9
-print steps
-print writeoutput()[0][2]
-print writeoutput()[0][3]
+print 'Scan tag please:'
+steps = int(CalcDeg(int(pointerlocx),int(pointerlocy),int(writeoutput()[0][0:4]),int(writeoutput()[1][0:4])))/0.9
+print ('Steppermotor will move {0} steps'.format(steps))
+print writeoutput()[0][0:4]
+print writeoutput()[1][0:4]
